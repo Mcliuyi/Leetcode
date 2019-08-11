@@ -76,7 +76,7 @@ class Solution:
         if not root:
             return None
 
-        if len(self.rlt) != level+1:
+        if len(self.rlt) < level+1:
             self.rlt.append([])
 
         self.rlt[level].append(root.val)
